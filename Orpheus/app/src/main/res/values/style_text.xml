@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="TextAppearance.Orpheus.MainHeader" parent="TextAppearance.MaterialComponents.Headline3">
-        <item name="android:textSize">200sp</item>
-        <item name="android:textColor">@color/main_red</item>
-    </style>
-</resources>

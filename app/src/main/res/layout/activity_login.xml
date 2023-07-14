@@ -4,16 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/dark_green"
     tools:context=".presentation.activities.LoginActivity">
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
+
+
+    <TextView
+        android:id="@+id/lg_tv"
+        style="@style/TextAppearance.Orpheus.MainHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent=".25" />
+        android:text="Войдите в приложение"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lg_tv" />
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        style="@style/custom_card_view_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline">
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,44 +47,39 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/lg_tv"
+            android:id="@+id/lg_about_tv"
+            style="@style/TextAppearance.Orpheus.NormalText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Войдите в приложение"
-            android:textColor="@color/main_red"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/lg_about_tv"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/editTextEmail"
+            style="@style/TextAppearance.Orpheus.EditText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="1dp"
             android:drawableStart="@drawable/ic_baseline_email"
-            android:drawableTint="@color/main_red"
+            android:drawableTint="@color/main_green"
             android:ems="10"
             android:hint="Email"
             android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lg_tv" />
+            app:layout_constraintTop_toBottomOf="@+id/lg_about_tv" />
 
         <EditText
             android:id="@+id/editTextPassword"
+            style="@style/TextAppearance.Orpheus.EditText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:drawableStart="@drawable/ic_baseline_lock"
-            android:drawableTint="@color/main_red"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
@@ -74,7 +95,7 @@
             android:layout_marginStart="64dp"
             android:layout_marginTop="64dp"
             android:layout_marginEnd="64dp"
-            android:text="Войти"
+            android:text="@string/enter"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
@@ -82,15 +103,14 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/loginButton"
-            app:layout_constraintVertical_bias="0.050000012">
+            app:layout_constraintStart_toStartOf="parent">
 
             <TextView
-                android:id="@+id/dhaa"
+                android:id="@+id/accex_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -103,8 +123,15 @@
                 android:layout_weight="1"
                 android:onClick="onClickReg"
                 android:text="Зарегистрируйтесь"
-                android:textColor="@color/main_red"
+                android:textColor="@color/main_green"
                 android:textStyle="bold" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="146dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,27 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/dark_green"
     tools:context=".presentation.activities.RegistrationActivity">
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent=".15" />
-
     <TextView
-        android:id="@+id/app_name_tv"
+        android:id="@+id/rg_tv"
+        style="@style/TextAppearance.Orpheus.MainHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        style = "TextAppearance.Orpheus.MainHeader"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/rg_tv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:textAllCaps="true" />
-
+        app:layout_constraintTop_toTopOf="parent" />
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardView"
         style="@style/custom_card_view_style"
@@ -38,78 +29,72 @@
         app:layout_constraintTop_toTopOf="@+id/guideline">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/lg_tv"
+                android:id="@+id/start_tv"
+                style="@style/TextAppearance.Orpheus.NormalText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Зарегистрируйтесь"
-                android:textColor="@color/main_red"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="@string/rg_about_tv"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
-
+                app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
                 android:id="@+id/regEditTextPersonName"
+                style="@style/TextAppearance.Orpheus.EditText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:ems="10"
-                android:inputType="textPersonName"
                 android:drawableStart="@drawable/ic_baseline_emoji"
-                android:drawableTint="@color/main_red"
+                android:ems="10"
                 android:hint="Ваше имя"
+                android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/regEditTextLogin" />
 
             <EditText
                 android:id="@+id/regEditTextLogin"
+                style="@style/TextAppearance.Orpheus.EditText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:ems="10"
-                android:inputType="textPersonName"
                 android:drawableStart="@drawable/ic_baseline_account_circle"
-                android:drawableTint="@color/main_red"
+                android:ems="10"
                 android:hint="Логин"
+                android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/regEditTextPassword" />
 
             <EditText
                 android:id="@+id/regEditTextEmailAddress"
+                style="@style/TextAppearance.Orpheus.EditText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="1dp"
-                android:layout_marginTop="24dp"
                 android:layout_marginEnd="1dp"
-                android:ems="10"
                 android:drawableStart="@drawable/ic_baseline_email"
-                android:drawableTint="@color/main_red"
-                android:inputType="textEmailAddress"
+                android:ems="10"
                 android:hint="Email"
+                android:inputType="textEmailAddress"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/lg_tv" />
+                app:layout_constraintTop_toBottomOf="@+id/start_tv" />
 
             <EditText
                 android:id="@+id/regEditTextPassword"
+                style="@style/TextAppearance.Orpheus.EditText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:hint="Пароль"
-                android:ems="10"
                 android:drawableStart="@drawable/ic_baseline_lock"
-                android:drawableTint="@color/main_red"
+                android:ems="10"
+                android:hint="Пароль"
                 android:inputType="textPassword"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -117,64 +102,42 @@
 
             <EditText
                 android:id="@+id/regEditTextAbout"
+                style="@style/TextAppearance.Orpheus.EditText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:ems="10"
-                android:inputType="textPersonName"
                 android:drawableStart="@drawable/ic_baseline_input_24"
-                android:drawableTint="@color/main_red"
+                android:ems="10"
                 android:hint="Описание"
+                android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/regEditTextPersonName" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                app:layout_constraintEnd_toEndOf="@+id/regEditTextAbout"
-                app:layout_constraintStart_toStartOf="@+id/regEditTextAbout"
-                app:layout_constraintTop_toBottomOf="@+id/regEditTextAbout">
-
-                <AutoCompleteTextView
-                    android:id="@+id/autoComplete"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:hint="Тип пользователя"
-                    android:inputType="none" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
             <Button
-                android:id="@+id/regButton"
+                android:id="@+id/regMusButton"
+                style="@style/Widget.Orpheus.Button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="64dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginEnd="64dp"
-                android:text="Зарегистрироваться"
-                app:cornerRadius="16dp"
+                android:text="@string/register"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+                app:layout_constraintTop_toBottomOf="@+id/regEditTextAbout" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/regButton"
-                app:layout_constraintVertical_bias="0.050000012">
+                app:layout_constraintStart_toStartOf="parent">
 
                 <TextView
-                    android:id="@+id/dhaa"
+                    android:id="@+id/accex_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -187,9 +150,27 @@
                     android:layout_weight="1"
                     android:onClick="onClickLogin"
                     android:text="Войдите"
-                    android:textColor="@color/main_red"
+                    android:textColor="@color/main_green"
                     android:textStyle="bold" />
             </LinearLayout>
+
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:backgroundTint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_tv" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="146dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
