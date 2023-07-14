@@ -1,11 +1,12 @@
 <resources>
-    <string name="app_name">Orpheus</string>
-    <string name="enter">Войти</string>
-    <string name="register">Зарегистрироваться</string>
-    <string name="lg_tv">Войтиде в приложение</string>
-    <string name="rg_tv">Зарегистрируйтесь</string>
-    <string name="rg_type_tv">Зарегистрируйте свой тип</string>
-    <string name="rg_about_tv">Укажите свои данные и перейдите на следующую страницу для выбора вашего типа</string>
-    <string name="lg_about_tv">Укажите свои данные и войдите в приложение</string>
-    <string name="start_tv">Начните свою жизнь музыканта сегодня с помощью "Orpheus"</string>
+    <string name="app_name" translatable="false">Orpheus</string>
+    <string name="enter">Login</string>
+    <string name="register">Registration</string>
+    <string name="lg_tv">Login</string>
+    <string name="rg_tv">Register</string>
+    <string name="rg_type_tv">Register your type</string>
+    <string name="rg_about_tv">Enter your details and go to the next page to select your type</string>
+    <string name="lg_about_tv">Enter your details and log in to the app</string>
+    <string name="start_tv">Start your life as a musician today with Orpheus</string>
+    <string name="filling" translatable="false">Lorem ipsum</string>
 </resources>

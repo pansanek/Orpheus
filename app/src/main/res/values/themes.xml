@@ -14,7 +14,29 @@
         <!-- Customize your theme here. -->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-
     </style>
 
+    <style name="drawable_style" parent="">
+        <item name="tint">@color/white</item>
+    </style>
+    <style name="icons_style" parent="">
+        <item name="tint">@color/black</item>
+    </style>
+
+    <style name="custom_bottom_nav" parent="Widget.MaterialComponents.CardView">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="custom_card_view_style" parent="Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/custom_card_view</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+    <style name="custom_card_view" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">48dp</item>
+        <item name="cornerSizeTopRight">48dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
 </resources>

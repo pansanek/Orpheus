@@ -9,6 +9,15 @@
         <item name="android:padding">16dp</item>
         <item name="android:fontFamily">@font/rubik</item>
     </style>
+    <style name="TextAppearance.Orpheus.Header" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/main_green</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:fontFamily">@font/rubik</item>
+    </style>
 
     <style name="TextAppearance.Orpheus.EditText" parent="Widget.AppCompat.EditText">
         <item name="android:textColor">@color/main_green</item>

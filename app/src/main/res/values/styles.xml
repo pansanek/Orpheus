@@ -15,22 +15,12 @@
         <item name ="android:textAllCaps">false</item>
     </style>
 
-    <style name="custom_card_view_style" parent="Widget.MaterialComponents.CardView">
-        <item name="shapeAppearanceOverlay">@style/custom_card_view</item>
-    </style>
 
-    <style name="custom_card_view" parent="">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSizeTopLeft">48dp</item>
-        <item name="cornerSizeTopRight">48dp</item>
-        <item name="cornerSizeBottomLeft">0dp</item>
-        <item name="cornerSizeBottomRight">0dp</item>
-    </style>
 
     <style name="custom_arrow_back_button" parent="">
         <item name="android:clickable">true</item>
-        <item name="tint">@color/main_green</item>
-
+        <item name="android:backgroundTint">@color/main_green</item>
+        <item name="tint">@color/white</item>
     </style>
 
 

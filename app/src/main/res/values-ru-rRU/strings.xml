@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter">Войти</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="lg_tv">Войдите в приложение</string>
+    <string name="rg_tv">Зарегистрируйтесь</string>
+    <string name="rg_type_tv">Зарегистрируйте свой тип</string>
+    <string name="rg_about_tv">Укажите свои данные и перейдите на следующую страницу для выбора вашего типа</string>
+    <string name="lg_about_tv">Укажите свои данные и войдите в приложение</string>
+    <string name="start_tv">Начните свою жизнь музыканта сегодня с помощью Orpheus</string>
+</resources>
