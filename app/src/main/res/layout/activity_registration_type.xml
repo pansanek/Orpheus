@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_green"
+    android:background="@drawable/ctr_bg"
     tools:context=".presentation.activities.RegistrationTypeActivity">
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -20,6 +20,8 @@
         android:layout_marginTop="1dp"
         android:background="#000000"
         android:backgroundTint="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rg_type_tv" />
 
     <TextView
@@ -58,7 +60,7 @@
             android:text="@string/rg_about_tv"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view" />
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -80,7 +82,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="#FFFFFF"
                 android:dropDownSelector="@drawable/ic_arrow_back"
-                android:hint="Ваш тип пользователя"
+                android:hint="@string/your_type"
                 android:inputType="none" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -114,7 +116,7 @@
                     android:layout_weight="1"
                     android:backgroundTint="#FFFFFF"
                     android:dropDownSelector="@drawable/ic_arrow_back"
-                    android:hint="Инструмент"
+                    android:hint="@string/instrument"
                     android:inputType="none" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -146,7 +148,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:hint="Жанр"
+                    android:hint="@string/genre"
                     android:inputType="none" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -172,7 +174,7 @@
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/ic_baseline_emoji"
                 android:ems="10"
-                android:hint="Название"
+                android:hint="@string/place_name"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -186,7 +188,7 @@
                 android:layout_marginTop="24dp"
                 android:drawableStart="@drawable/ic_location_bold"
                 android:ems="10"
-                android:hint="Адрес"
+                android:hint="@string/address"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -200,7 +202,7 @@
                 android:layout_marginTop="24dp"
                 android:drawableStart="@drawable/ic_baseline_input_24"
                 android:ems="10"
-                android:hint="Описание"
+                android:hint="@string/desc"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

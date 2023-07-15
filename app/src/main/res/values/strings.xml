@@ -8,5 +8,21 @@
     <string name="rg_about_tv">Enter your details and go to the next page to select your type</string>
     <string name="lg_about_tv">Enter your details and log in to the app</string>
     <string name="start_tv">Start your life as a musician today with Orpheus</string>
+    <string name="noband"> </string>
     <string name="filling" translatable="false">Lorem ipsum</string>
+    <string name="password">password</string>
+    <string name="email" >email</string>
+    <string name="no_acc" >Don\'t have an account?</string>
+    <string name="desc">description</string>
+    <string name="login">login</string>
+    <string name="name">your name</string>
+    <string name="acc_ex">Already have an account?</string>
+    <string name="message">Message</string>
+    <string name="ed_profile">Edit profile</string>
+    <string name="my_band">My band</string>
+    <string name="your_type">Your type</string>
+    <string name="instrument">Instrument</string>
+    <string name="place_name">Place name</string>
+    <string name="address">address</string>
+    <string name="genre">genre</string>
 </resources>

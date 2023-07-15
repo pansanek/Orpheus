@@ -51,7 +51,7 @@
                 android:layout_marginTop="24dp"
                 android:drawableStart="@drawable/ic_baseline_emoji"
                 android:ems="10"
-                android:hint="Ваше имя"
+                android:hint="@string/name"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -65,7 +65,7 @@
                 android:layout_marginTop="24dp"
                 android:drawableStart="@drawable/ic_baseline_account_circle"
                 android:ems="10"
-                android:hint="Логин"
+                android:hint="@string/login"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -80,7 +80,7 @@
                 android:layout_marginEnd="1dp"
                 android:drawableStart="@drawable/ic_baseline_email"
                 android:ems="10"
-                android:hint="Email"
+                android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -94,7 +94,7 @@
                 android:layout_marginTop="24dp"
                 android:drawableStart="@drawable/ic_baseline_lock"
                 android:ems="10"
-                android:hint="Пароль"
+                android:hint="@string/password"
                 android:inputType="textPassword"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -108,7 +108,7 @@
                 android:layout_marginTop="24dp"
                 android:drawableStart="@drawable/ic_baseline_input_24"
                 android:ems="10"
-                android:hint="Описание"
+                android:hint="@string/desc"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -141,7 +141,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Есть аккаунт? " />
+                    android:text="@string/acc_ex" />
 
                 <TextView
                     android:id="@+id/reg_tv"
@@ -149,7 +149,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:onClick="onClickLogin"
-                    android:text="Войдите"
+                    android:text="@string/lg_tv"
                     android:textColor="@color/main_green"
                     android:textStyle="bold" />
             </LinearLayout>
